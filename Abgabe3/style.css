@@ -1,0 +1,71 @@
+body {
+    background-image: url("Bilder/bg.png");
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    z-index: 0;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 64px;
+    font-weight: 800;
+    padding-top: 100px;
+}
+
+#Liste {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.tabelle{
+    text-align: center;
+    margin-left: 200px;
+}
+
+td img{
+    display: block;
+    margin-right: auto;
+    
+
+}
+
+.tableheadline{color: rgba(26, 26, 26, 0.932);font-weight: 900;
+}
+
+.navi {
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    animation: none;
+}
+
+.navi a {
+    color: black;
+    text-decoration: none;
+}
+
+.navi a:hover {
+    color: red;
+}
+
+
+#aboutmeactive {
+    color: red;
+}
+
+#portfolioactive {
+    color: red;
+}
+
+#contactactive {
+    color: red;
+}
+
+#avatar{width: 185px;
+    height: 320;
