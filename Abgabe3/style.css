@@ -6,7 +6,7 @@ body {
     margin-right: auto;
 }
 
-h1{
+h1 {
     z-index: 0;
     color: black;
     letter-spacing: 5px;
@@ -21,19 +21,19 @@ h1{
     margin-right: 50px;
 }
 
-.tabelle{
+.tabelle {
     text-align: center;
     margin-left: 200px;
 }
 
-td img{
+td img {
     display: block;
     margin-right: auto;
-    
-
 }
 
-.tableheadline{color: rgba(26, 26, 26, 0.932);font-weight: 900;
+.tableheadline {
+    color: rgba(26, 26, 26, 0.932);
+    font-weight: 900;
 }
 
 .navi {
@@ -54,7 +54,6 @@ td img{
     color: red;
 }
 
-
 #aboutmeactive {
     color: red;
 }
@@ -67,5 +66,32 @@ td img{
     color: red;
 }
 
-#avatar{width: 185px;
-    height: 320;
+#avatar {
+    width: 185px;
+    height: 320px;
+}
+
+.bilder {
+    border: 5px solid rgba(82, 39, 0, 0.37);
+}
+
+#quote {
+    color: rgb(255, 0, 0);
+}
+
+h4,
+h5 {
+    border: 5px solid rgb(255, 255, 255);
+}
+
+#content {
+    border: 5px solid rgb(255, 0, 0);
+    padding: 100px;
+}
+
+#brief {
+    padding-bottom: 50px;
+    margin-top: -20px;
+    width: 20%;
+    height: 20%;
+}
