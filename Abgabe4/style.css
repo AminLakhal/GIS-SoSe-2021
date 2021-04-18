@@ -6,13 +6,48 @@
                                margin-left: auto;
                                margin-right: auto;
                            }
+                           @keyframes fadein {
+                               from {
+                                   opacity: 0%;
+                               }
+                               to {
+                                   opacity: 100%;
+                               }
+                           }
+                           @keyframes colorswitch {
+                               from {
+                                   background-color: rgb(231, 231, 231);
+                               }
+                               to {
+                                   background-color: white;
+                                   opacity: 100%;
+                               }
+                           }
+                           @keyframes fontscale {
+                               from {
+                                   scale: 2;
+                               }
+                               to {
+                                   scale: 1;
+                               }
+                           }
+                           .headline {
+                               background-color: white;
+                               margin-top: -50px;
+                               margin-bottom: -1px;
+                               width: 100%;
+                               border-bottom: 2px solid rgb(0, 0, 0);
+                               animation-duration: 3s;
+                               animation-name: colorswitch;
+                           }
                            h1 {
-                               z-index: 0;
                                color: black;
                                letter-spacing: 5px;
                                font-size: 64px;
                                font-weight: 800;
                                padding-top: 100px;
+                               animation-duration: 3s;
+                               animation-name: fadein;
                            }
                            #Liste {
                                list-style-type: none;
@@ -102,6 +137,14 @@
                                margin-left: auto;
                                margin-right: auto;
                            }
+                           @keyframes fadein {
+                               from {
+                                   opacity: 0%;
+                               }
+                               to {
+                                   opacity: 100%;
+                               }
+                           }
                            h1 {
                                z-index: 0;
                                color: black;
@@ -109,6 +152,8 @@
                                font-size: 64px;
                                font-weight: 800;
                                padding-top: 100px;
+                               animation-duration: 3s;
+                               animation-name: fadein;
                            }
                            #Liste {
                                list-style-type: none;
@@ -122,10 +167,11 @@
                                margin-left: -100px;
                            }
                            tr>td {
-                               display: block;
-                               margin-left: 280px;
-                               padding: 30px;
                                text-align: center;
+                               display: block;
+                               margin: auto;
+                               width: 800px;
+                               margin-left: 2%;
                            }
                            .tableheadline {
                                color: rgba(26, 26, 26, 0.932);
@@ -163,10 +209,12 @@
                                border: 5px solid rgba(82, 39, 0, 0.37);
                                width: 100%;
                                height: 75%;
-                               transform: scale(1.2);
+                               transform: scale(0.7);
+                               animation-duration: 2s;
+                               animation-name: fadein;
                            }
                            .bilder:hover {
-                               transform: scale(1.5);
+                               transform: scale(1);
                                opacity: 1;
                                border: 1px solid black;
                                padding: 5px;
@@ -207,5 +255,11 @@
                            #avatar {
                                margin-top: 100px;
                                margin-bottom: 100px;
+                           }
+                           #audiodatei {
+                               background-color: rgba(197, 197, 197, 0.473);
+                               padding-top: 60px;
+                               margin-top: -22px;
+                               margin-bottom: -22px;
                            }
                        }
