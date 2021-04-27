@@ -175,8 +175,13 @@ var Aufgabe5e;
 var Aufgabe5f;
 (function (Aufgabe5f) {
     function leapyears() {
-        fo;
+        for (let _year = 1900; _year < 2021; _year++) {
+            if ((_year % 400 == 0) || ((_year % 4 == 0) && (_year % 100 != 0))) { //wenn jahr durch 400 oder 400 teilbar ist und nicht durch 100 
+                console.log(_year);
+            }
+        }
     }
+    leapyears();
 })(Aufgabe5f || (Aufgabe5f = {}));
 var Aufgabe6a;
 (function (Aufgabe6a) {
@@ -190,4 +195,39 @@ var Aufgabe6a;
     }
     sieben();
 })(Aufgabe6a || (Aufgabe6a = {}));
+var Aufgabe6b;
+(function (Aufgabe6b) {
+    function fizz() {
+        for (let _i = 1; _i <= 100; _i++) {
+            if (_i % 3 == 0) {
+                console.log("fizz");
+            }
+            else if (_i % 5 == 0) {
+                console.log("buzz");
+            }
+            console.log(_i);
+        }
+    }
+    fizz();
+})(Aufgabe6b || (Aufgabe6b = {}));
+var Aufgabe6c;
+(function (Aufgabe6c) {
+    function fizzbuzz() {
+        for (let _i = 1; _i <= 100; _i++) {
+            if (_i % 3 == 0) {
+                if (_i % 5 == 0) {
+                    console.log("fizzbuzz");
+                }
+                else {
+                    console.log("fizz");
+                }
+            }
+            else if (_i % 5 == 0) {
+                console.log("buzz");
+            }
+            console.log(_i);
+        }
+    }
+    fizzbuzz();
+})(Aufgabe6c || (Aufgabe6c = {}));
 //# sourceMappingURL=script.js.map

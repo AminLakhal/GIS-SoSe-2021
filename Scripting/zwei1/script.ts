@@ -218,10 +218,13 @@ namespace Aufgabe5e {
 namespace Aufgabe5f {
 
     function leapyears() {
-        fo
-
+        for (let _year: number = 1900; _year < 2021; _year++) {
+            if ((_year % 400 == 0) || ((_year % 4 == 0) && (_year % 100 != 0))) { //wenn jahr durch 400 oder 400 teilbar ist und nicht durch 100 
+                console.log(_year)
+            }
+        }
     }
-
+    leapyears();
 
 }
 
@@ -241,4 +244,39 @@ namespace Aufgabe6a {
 
 namespace Aufgabe6b {
 
+    function fizz() {
+        for (let _i: number = 1; _i <= 100; _i++) {
+
+            if (_i % 3 == 0) {
+                    console.log("fizz");
+                }
+             else if (_i % 5 == 0) {
+                console.log("buzz");
+            }
+            console.log(_i);
+        }
+
+    }
+    fizz();
+}
+
+namespace Aufgabe6c {
+
+    function fizzbuzz() {
+        for (let _i: number = 1; _i <= 100; _i++) {
+
+            if (_i % 3 == 0) {
+                if (_i % 5 == 0) {
+                    console.log("fizzbuzz");
+                } else {
+                    console.log("fizz");
+                }
+            } else if (_i % 5 == 0) {
+                console.log("buzz");
+            }
+            console.log(_i);
+        }
+
+    }
+    fizzbuzz();
 }
