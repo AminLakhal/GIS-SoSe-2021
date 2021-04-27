@@ -202,6 +202,43 @@ namespace Aufgabe5d {
 }
 
 namespace Aufgabe5e {
-    function factorial() { }
+    function factorial(_n: number): number {
+
+        if (_n > 0 && _n <= 1) { return 1; }
+
+        else {
+            return _n * factorial(_n - 1);
+        }
+    }
+
+    console.log(factorial(5));
+
+}
+
+namespace Aufgabe5f {
+
+    function leapyears() {
+        fo
+
+    }
+
+
+}
+
+
+namespace Aufgabe6a {
+    function sieben() {
+        let _n: number = 7;
+        let _row: string = "";
+        for (let _i: number = 0; _i < _n; _i++) {
+            _row += "#";
+            console.log(_row);
+
+        }
+    }
+    sieben();
+}
+
+namespace Aufgabe6b {
 
 }

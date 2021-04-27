@@ -162,6 +162,32 @@ var Aufgabe5d;
 })(Aufgabe5d || (Aufgabe5d = {}));
 var Aufgabe5e;
 (function (Aufgabe5e) {
-    function factorial() { }
+    function factorial(_n) {
+        if (_n > 0 && _n <= 1) {
+            return 1;
+        }
+        else {
+            return _n * factorial(_n - 1);
+        }
+    }
+    console.log(factorial(5));
 })(Aufgabe5e || (Aufgabe5e = {}));
+var Aufgabe5f;
+(function (Aufgabe5f) {
+    function leapyears() {
+        fo;
+    }
+})(Aufgabe5f || (Aufgabe5f = {}));
+var Aufgabe6a;
+(function (Aufgabe6a) {
+    function sieben() {
+        let _n = 7;
+        let _row = "";
+        for (let _i = 0; _i < _n; _i++) {
+            _row += "#";
+            console.log(_row);
+        }
+    }
+    sieben();
+})(Aufgabe6a || (Aufgabe6a = {}));
 //# sourceMappingURL=script.js.map
