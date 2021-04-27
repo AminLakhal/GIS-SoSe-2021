@@ -230,4 +230,42 @@ var Aufgabe6c;
     }
     fizzbuzz();
 })(Aufgabe6c || (Aufgabe6c = {}));
+var Aufgabe6d;
+(function (Aufgabe6d) {
+    function chess() {
+        let _chessboard = "";
+        for (let _row = 0; _row <= 8; _row++) {
+            for (let _col = 0; _col <= 8; _col++) {
+                if ((_row + _col) % 2 == 0) {
+                    _chessboard += " ";
+                }
+                else {
+                    _chessboard += "#";
+                }
+            }
+            _chessboard += "\n";
+        }
+        console.log(_chessboard);
+    }
+    chess();
+})(Aufgabe6d || (Aufgabe6d = {}));
+var Aufgabe6e;
+(function (Aufgabe6e) {
+    function chess(_height, _width) {
+        let _chessboard = "";
+        for (let _row = 0; _row <= _width; _row++) {
+            for (let _col = 0; _col <= _height; _col++) {
+                if ((_row + _col) % 2 == 0) {
+                    _chessboard += " ";
+                }
+                else {
+                    _chessboard += "#";
+                }
+            }
+            _chessboard += "\n";
+        }
+        console.log(_chessboard);
+    }
+    chess(16, 16);
+})(Aufgabe6e || (Aufgabe6e = {}));
 //# sourceMappingURL=script.js.map

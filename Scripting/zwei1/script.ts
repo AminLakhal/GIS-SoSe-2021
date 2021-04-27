@@ -248,9 +248,9 @@ namespace Aufgabe6b {
         for (let _i: number = 1; _i <= 100; _i++) {
 
             if (_i % 3 == 0) {
-                    console.log("fizz");
-                }
-             else if (_i % 5 == 0) {
+                console.log("fizz");
+            }
+            else if (_i % 5 == 0) {
                 console.log("buzz");
             }
             console.log(_i);
@@ -279,4 +279,52 @@ namespace Aufgabe6c {
 
     }
     fizzbuzz();
+}
+
+namespace Aufgabe6d {
+    function chess() {
+
+        let _chessboard: string = "";
+        
+        for (let _row: number = 0; _row <= 8; _row++) {
+            for (let _col: number = 0; _col <= 8; _col++) {
+                if ((_row + _col) % 2 == 0) {
+                    _chessboard += " ";
+                } else {
+                    _chessboard += "#";
+                }
+
+            }
+            _chessboard += "\n";
+
+        }
+        console.log(_chessboard)
+    }
+
+    chess();
+}
+
+namespace Aufgabe6e {
+
+
+    function chess(_height: number, _width: number) {
+
+        let _chessboard: string = "";
+        
+        for (let _row: number = 0; _row <= _width; _row++) {
+            for (let _col: number = 0; _col <= _height; _col++) {
+                if ((_row + _col) % 2 == 0) {
+                    _chessboard += " ";
+                } else {
+                    _chessboard += "#";
+                }
+
+            }
+            _chessboard += "\n";
+
+        }
+        console.log(_chessboard)
+    }
+
+    chess(16, 16);
 }
