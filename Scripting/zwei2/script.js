@@ -1,4 +1,5 @@
 "use strict";
+debugger;
 var Aufgabe1a;
 (function (Aufgabe1a) {
     function min(..._zahlen) {
@@ -73,13 +74,36 @@ var Aufgabe2a;
             console.log(_array[i]);
         }
     }
-    backwards(1, 2, 3, 4, 5, 6, 7, 8, 9);
+    backwards(5, 42, 17, 2018, -10, 60, -10010);
 })(Aufgabe2a || (Aufgabe2a = {}));
 var Aufgabe2b;
 (function (Aufgabe2b) {
-    let array1 = ["apfel", "birne", "zitrone"];
-    let array2 = [1, 2, 3];
-    let mergedArray = [...array1, ...array2];
-    console.log(mergedArray);
+    /*
+        let array1: string[] = ["apfel", "birne", "zitrone"];
+        let array2: number[] = [1, 2, 3];
+    
+        let mergedArray = [...array1, ...array2];
+    
+        console.log(mergedArray);
+    */
+    function multArray() {
+        let mult = [[1, 2, 3], [10, 20, 30], [123, 666, -911], [15, 9001, -440, 1024]];
+        let newArray = [mult.length];
+        //newArray.push(...mult);
+        for (let i = 0; i < mult.length; i++) {
+            for (let j = 0; j < mult[i].length; j++) {
+                newArray = [(mult[i][j])];
+                console.log(newArray);
+            }
+        }
+    }
+    multArray();
 })(Aufgabe2b || (Aufgabe2b = {}));
+var Aufgabe2c;
+(function (Aufgabe2c) {
+    let arr = [5, 42, 17, 2018, -10, 60, -10010];
+    function split(_index1, _index2) {
+    }
+    ;
+})(Aufgabe2c || (Aufgabe2c = {}));
 //# sourceMappingURL=script.js.map
