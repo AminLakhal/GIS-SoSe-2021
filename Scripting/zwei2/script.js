@@ -5,7 +5,7 @@ var Aufgabe1a;
     function min(..._zahlen) {
         // let x: number = Math.min(_zahlen);
         let minvalue = _zahlen[0];
-        for (let i = 0; i < _zahlen.length; i++) {
+        for (let i = 0; i < _zahlen.length; i++) { //
             if (_zahlen[i] < minvalue) {
                 minvalue = _zahlen[i];
             }
