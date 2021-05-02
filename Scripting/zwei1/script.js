@@ -117,9 +117,11 @@ var Aufgabe5b;
         let _y = 4;
         if (_x > _y) {
             console.log(_x);
+            return (_x);
         }
         else {
             console.log(_y);
+            return _y;
         }
     }
     max();
@@ -163,11 +165,11 @@ var Aufgabe5d;
 var Aufgabe5e;
 (function (Aufgabe5e) {
     function factorial(_n) {
-        if (_n > 0 && _n <= 1) {
+        if (_n <= 1) {
             return 1;
         }
         else {
-            return _n * factorial(_n - 1);
+            return _n * factorial(_n - 1); // multipliziere
         }
     }
     console.log(factorial(5));
@@ -234,8 +236,8 @@ var Aufgabe6d;
 (function (Aufgabe6d) {
     function chess() {
         let _chessboard = "";
-        for (let _row = 0; _row <= 8; _row++) {
-            for (let _col = 0; _col <= 8; _col++) {
+        for (let _row = 0; _row < 8; _row++) {
+            for (let _col = 0; _col < 8; _col++) {
                 if ((_row + _col) % 2 == 0) {
                     _chessboard += " ";
                 }
@@ -253,8 +255,8 @@ var Aufgabe6e;
 (function (Aufgabe6e) {
     function chess(_height, _width) {
         let _chessboard = "";
-        for (let _row = 0; _row <= _width; _row++) {
-            for (let _col = 0; _col <= _height; _col++) {
+        for (let _row = 0; _row < _width; _row++) {
+            for (let _col = 0; _col < _height; _col++) {
                 if ((_row + _col) % 2 == 0) {
                     _chessboard += " ";
                 }

@@ -141,7 +141,8 @@ namespace Aufgabe5b {
         let _y: number = 4;
         if (_x > _y) {
             console.log(_x);
-        } else { console.log(_y); }
+            return (_x);
+        } else { console.log(_y);return _y; }
 
     }
 
@@ -204,10 +205,10 @@ namespace Aufgabe5d {
 namespace Aufgabe5e {
     function factorial(_n: number): number {
 
-        if (_n > 0 && _n <= 1) { return 1; }
+        if (_n <= 1) { return 1; }
 
         else {
-            return _n * factorial(_n - 1);
+            return _n * factorial(_n - 1); // multipliziere
         }
     }
 
@@ -253,6 +254,8 @@ namespace Aufgabe6b {
             else if (_i % 5 == 0) {
                 console.log("buzz");
             }
+
+            
             console.log(_i);
         }
 
@@ -286,8 +289,8 @@ namespace Aufgabe6d {
 
         let _chessboard: string = "";
         
-        for (let _row: number = 0; _row <= 8; _row++) {
-            for (let _col: number = 0; _col <= 8; _col++) {
+        for (let _row: number = 0; _row < 8; _row++) {
+            for (let _col: number = 0; _col < 8; _col++) {
                 if ((_row + _col) % 2 == 0) {
                     _chessboard += " ";
                 } else {
@@ -311,8 +314,8 @@ namespace Aufgabe6e {
 
         let _chessboard: string = "";
         
-        for (let _row: number = 0; _row <= _width; _row++) {
-            for (let _col: number = 0; _col <= _height; _col++) {
+        for (let _row: number = 0; _row < _width; _row++) {
+            for (let _col: number = 0; _col < _height; _col++) {
                 if ((_row + _col) % 2 == 0) {
                     _chessboard += " ";
                 } else {
