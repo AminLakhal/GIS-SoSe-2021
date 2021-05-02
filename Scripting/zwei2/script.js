@@ -35,7 +35,7 @@ var Aufgabe1b;
 
     50 = true
     75 = false
-    -1 "Maximum call stack size exceeded" weil die funktion sich immer wieder selbst aufruft da n nicht 0 oder 1 werden kann */
+    -1 "Maximum call stack size exceeded" weil die funktion sich immer wieder selbst aufruft da n nicht 0 oder 1 werden kann, man könnte es lösen im dem man den fall abfängt sodass _n nicht -1 werden kann */
 })(Aufgabe1b || (Aufgabe1b = {}));
 var Aufgabe1c;
 (function (Aufgabe1c) {
@@ -92,6 +92,7 @@ var Aufgabe2b;
         //newArray.push(...mult);
         for (let i = 0; i < mult.length; i++) {
             for (let j = 0; j < mult[i].length; j++) {
+                newArray.length++;
                 newArray = [(mult[i][j])];
                 console.log(newArray);
             }
@@ -101,9 +102,14 @@ var Aufgabe2b;
 })(Aufgabe2b || (Aufgabe2b = {}));
 var Aufgabe2c;
 (function (Aufgabe2c) {
-    let arr = [5, 42, 17, 2018, -10, 60, -10010];
-    function split(_index1, _index2) {
+    let newArray = [];
+    function split(_array, _index1, _index2) {
+        for (let i = _index1; i <= _index2; i++) {
+            newArray.push(_array[i]);
+            console.log(_array[i]);
+        }
+        return split;
     }
-    ;
+    split([5, 42, 17, 2018, -10, 60, -10010], 2, 4);
 })(Aufgabe2c || (Aufgabe2c = {}));
 //# sourceMappingURL=script.js.map

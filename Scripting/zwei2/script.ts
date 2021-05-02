@@ -39,7 +39,7 @@ namespace Aufgabe1b {
 
     50 = true
     75 = false
-    -1 "Maximum call stack size exceeded" weil die funktion sich immer wieder selbst aufruft da n nicht 0 oder 1 werden kann */
+    -1 "Maximum call stack size exceeded" weil die funktion sich immer wieder selbst aufruft da n nicht 0 oder 1 werden kann, man könnte es lösen im dem man den fall abfängt sodass _n nicht -1 werden kann */
 
 }
 namespace Aufgabe1c {
@@ -125,6 +125,7 @@ namespace Aufgabe2b {
         //newArray.push(...mult);
         for (let i: number = 0; i < mult.length; i++) {
             for (let j: number = 0; j < mult[i].length; j++) {
+                newArray.length++;
                 newArray = [(mult[i][j])];
                 console.log(newArray);
             }
@@ -138,13 +139,25 @@ namespace Aufgabe2b {
 
 namespace Aufgabe2c {
 
-    let arr: number[] = [5, 42, 17, 2018, -10, 60, -10010];
+    let newArray: number[] = [];
 
-    function split(_index1: number, _index2: number) { 
+    function split(_array: number[], _index1: number, _index2: number) {
 
+        for (let i: number = _index1; i <= _index2; i++) {
+            newArray.push(_array[i]);
+            console.log(_array[i]);
+        }
         
-    }
+        return split;
 
-    ;
+
+    }
+    split([5, 42, 17, 2018, -10, 60, -10010], 2, 4);
+
+
+}
+
+namespace Aufgabe3 {
+
 
 }
